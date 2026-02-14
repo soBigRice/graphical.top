@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Rainbow Party';
+  src: url('/font/Rainbow-Party-2.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AaPianPianNiShiWoDeQiXu-2';
+  src: url('/font/AaPianPianNiShiWoDeQiXu-2.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF;
+}
+
+:root {
+  --font-display: 'AaPianPianNiShiWoDeQiXu-2', 'Rainbow Party', 'Trebuchet MS', sans-serif;
+  --font-body: 'AaPianPianNiShiWoDeQiXu-2', 'Rainbow Party', 'Segoe UI', sans-serif;
+  --bg-pearl: #f1efe8;
+  --bg-sage: #d5e7e1;
+  --bg-ink: #1a2f3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-body);
+  color: var(--bg-ink);
+  background:
+    linear-gradient(135deg, rgba(241, 239, 232, 0.32), rgba(213, 231, 225, 0.24)),
+    url('/img/wallpaper.jpeg') center center / cover no-repeat fixed;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
