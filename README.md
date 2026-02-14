@@ -1,5 +1,40 @@
-# Vue 3 + TypeScript + Vite
+# graphical.top Homepage
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于 `Vue 3 + TypeScript + Vite` 的个人主页项目。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 页面效果
+
+- 主视觉：毛玻璃卡片风格
+- 中央标题：`graphical` 大字，玻璃质感叠加渐变彩色
+- 背景：使用 `public/img/wallpaper.jpeg` 作为壁纸
+- 字体（英文主字）：`public/font/Rainbow-Party-2.ttf`
+- 字体（中文优先）：`public/font/AaPianPianNiShiWoDeQiXu-2.ttf`
+- 右下角：作者信息与 GitHub 图标链接（`sobigrice`）
+
+## 本地开发
+
+```bash
+npm install
+npm run dev
+```
+
+默认开发地址一般为 `http://localhost:5173/`。
+
+## 构建与预览
+
+```bash
+npm run build
+npm run preview
+```
+
+## 关键文件
+
+- 页面结构与样式：`src/App.vue`
+- 全局样式与字体声明：`src/style.css`
+- 入口文件：`src/main.ts`
+
+## 可配置项
+
+- 顶部欢迎文案：`src/App.vue` 中 `.domain`
+- 网站简介文案：`src/App.vue` 中 `.tagline`
+- 作者名与 GitHub 链接：`src/App.vue` 中 `.author`

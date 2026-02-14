@@ -17,6 +17,15 @@
 
       <p class="tagline">
         网站简介：这是一个网站，不过目前我没想好写啥，欢迎各位投稿。
+        可以点击
+        <a
+          href="https://github.com/soBigRice/graphical.top"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          此处
+        </a>
+        跳转到代码仓库投稿。
       </p>
     </section>
 
@@ -92,7 +101,7 @@
   text-transform: lowercase;
   overflow: visible;
   padding: 0.1em 0.14em 0.26em 0.04em;
-  text-shadow: 0 12px 30px rgba(14, 23, 30, 0.22);
+  text-shadow: 0 14px 32px rgba(66, 63, 145, 0.26);
 }
 
 .word span {
@@ -101,14 +110,14 @@
   padding: 0.04em 0.05em 0.12em 0.01em;
   color: transparent;
   background: linear-gradient(
-    165deg,
-    rgba(255, 255, 255, 0.86),
-    rgba(220, 239, 244, 0.42) 45%,
-    rgba(255, 255, 255, 0.18)
+    to right,
+    rgba(236, 229, 255, 0.98),
+    rgba(188, 182, 255, 0.9) 45%,
+    rgba(119, 179, 255, 0.84)
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.45);
+  -webkit-text-stroke: 1px rgba(231, 227, 255, 0.92);
 }
 
 .word span::before {
@@ -117,19 +126,18 @@
   inset: -0.01em -0.03em -0.06em 0;
   color: transparent;
   background-image: linear-gradient(
-    120deg,
-    #ff5f6d 0%,
-    #ffc371 22%,
-    #7cf5b1 42%,
-    #4ec5ff 62%,
-    #6d68ff 80%,
-    #ff5f6d 100%
+    to right,
+    #d8b9ff 0%,
+    #b59bff 30%,
+    #8f8cff 58%,
+    #5f96ff 80%,
+    #59bcff 100%
   );
-  background-size: 220% 100%;
+  background-size: 200% 100%;
   background-position: calc(var(--i) * 12.5%) 50%;
   -webkit-background-clip: text;
   background-clip: text;
-  opacity: 0.55;
+  opacity: 0.88;
   pointer-events: none;
 }
 
@@ -140,13 +148,13 @@
   color: transparent;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.06)
+    rgba(246, 242, 255, 0.98),
+    rgba(146, 181, 255, 0.3)
   );
   -webkit-background-clip: text;
   background-clip: text;
-  filter: blur(4px);
-  opacity: 0.5;
+  filter: blur(6px);
+  opacity: 0.72;
   pointer-events: none;
 }
 
@@ -164,6 +172,17 @@
   font-size: clamp(0.95rem, 1.7vw, 1.25rem);
   letter-spacing: 0.03em;
   color: rgba(23, 34, 42, 0.82);
+}
+
+.tagline a {
+  color: rgba(24, 85, 122, 0.94);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.14em;
+}
+
+.tagline a:hover {
+  color: rgba(11, 63, 95, 0.98);
 }
 
 .author {
